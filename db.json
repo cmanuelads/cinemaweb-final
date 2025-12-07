@@ -1,0 +1,175 @@
+{
+  "filmes": [
+    {
+      "id": "1",
+      "titulo": "Barbie",
+      "genero": "Comédia",
+      "duracao": 114,
+      "classificacao": "12",
+      "sinopse": "Barbie e Ken estão se divertindo no colorido e aparentemente perfeito mundo da Barbie Land. Quando têm a chance de ir ao mundo real, descobrem as alegrias e os perigos de viver entre os humanos.",
+      "imagem": "/posters/barbie.jpg",
+      "diretor": "Greta Gerwig"
+    },
+    {
+      "id": "2",
+      "titulo": "Barbie e as Três Mosqueteiras",
+      "genero": "Animação",
+      "duracao": 81,
+      "classificacao": "L",
+      "sinopse": "Corinne é uma jovem destemida que sonha em se tornar uma mosqueteira. Em Paris, ela conhece três garotas que compartilham o mesmo sonho e juntas se tornam as melhores amigas enquanto salvam o príncipe.",
+      "imagem": "/posters/Barbie%20e%20as%20mosqueteiras.webp",
+      "diretor": "William Lau"
+    },
+    {
+      "id": "3",
+      "titulo": "Barbie: A Sereia das Pérolas",
+      "genero": "Animação",
+      "duracao": 75,
+      "classificacao": "L",
+      "sinopse": "Lumina é uma sereia encantadora que sonha em ser princesa. Com o poder mágico de fazer as pérolas dançarem e brilharem, ela embarca em uma aventura para descobrir sua verdadeira identidade.",
+      "imagem": "/posters/Barbie%20sereia.jpg",
+      "diretor": "Zeke Norton"
+    }
+  ],
+  "salas": [
+    {
+      "id": "1",
+      "nome": "Sala IMAX Premium",
+      "capacidade": 100,
+      "tipo": "3D",
+      "fileiras": 10,
+      "assentosPorFileira": 10,
+      "descricao": "Tela gigante IMAX com som Dolby Atmos"
+    },
+    {
+      "id": "2",
+      "nome": "Sala VIP Lounge",
+      "capacidade": 40,
+      "tipo": "2D",
+      "fileiras": 5,
+      "assentosPorFileira": 8,
+      "descricao": "Poltronas reclináveis com serviço de garçom"
+    },
+    {
+      "id": "3",
+      "nome": "Sala 4DX Experience",
+      "capacidade": 60,
+      "tipo": "3D",
+      "fileiras": 6,
+      "assentosPorFileira": 10,
+      "descricao": "Experiência 4D com movimento e efeitos especiais"
+    },
+    {
+      "id": "4",
+      "nome": "Sala Standard 1",
+      "capacidade": 80,
+      "tipo": "2D",
+      "fileiras": 8,
+      "assentosPorFileira": 10,
+      "descricao": "Sala tradicional com ótima visibilidade"
+    },
+    {
+      "id": "5",
+      "nome": "Sala Standard 2",
+      "capacidade": 80,
+      "tipo": "2D",
+      "fileiras": 8,
+      "assentosPorFileira": 10,
+      "descricao": "Sala tradicional com som surround"
+    }
+  ],
+  "sessoes": [
+    {
+      "id": "1",
+      "filmeId": "1",
+      "salaId": "1",
+      "data": "2025-12-08",
+      "horario": "14:00",
+      "preco": 35,
+      "assentosOcupados": []
+    },
+    {
+      "id": "2",
+      "filmeId": "2",
+      "salaId": "2",
+      "data": "2025-12-08",
+      "horario": "15:00",
+      "preco": 30,
+      "assentosOcupados": []
+    },
+    {
+      "id": "3",
+      "filmeId": "3",
+      "salaId": "3",
+      "data": "2025-12-08",
+      "horario": "16:00",
+      "preco": 25,
+      "assentosOcupados": [
+        "B4",
+        "B5"
+      ]
+    }
+  ],
+  "combos": [
+    {
+      "id": "1",
+      "nome": "Combo Pipoca Grande",
+      "descricao": "Pipoca grande + 2 refrigerantes médios",
+      "preco": 35,
+      "imagem": "/posters/Pipoca.jpg",
+      "categoria": "combo"
+    },
+    {
+      "id": "2",
+      "nome": "Coca-Cola 500ml",
+      "descricao": "Refrigerante Coca-Cola gelado",
+      "preco": 12,
+      "imagem": "/posters/Coca.jpg",
+      "categoria": "bebida"
+    },
+    {
+      "id": "3",
+      "nome": "Chocolate Premium",
+      "descricao": "Barra de chocolate ao leite importado",
+      "preco": 15,
+      "imagem": "/posters/Chocolate.jpg",
+      "categoria": "doce"
+    },
+    {
+      "id": "4",
+      "nome": "Combo Família",
+      "descricao": "2 Pipocas grandes + 4 refrigerantes + Chocolate",
+      "preco": 65,
+      "imagem": "/posters/Pipoca.jpg",
+      "categoria": "combo"
+    }
+  ],
+  "ingressos": [
+    {
+      "sessaoId": "3",
+      "assentos": [
+        "B4",
+        "B5"
+      ],
+      "nomeCliente": "claudia manuela",
+      "emailCliente": "claudiamanuela.gyn@gmail.com",
+      "total": 50,
+      "dataCompra": "2025-12-07T23:38:16.400Z",
+      "status": "confirmado",
+      "id": 1
+    }
+  ],
+  "comprasCombos": [
+    {
+      "id": "1",
+      "comboId": "1",
+      "quantidade": 2,
+      "nomeCliente": "Maria Silva",
+      "emailCliente": "maria@email.com",
+      "total": 70,
+      "dataCompra": "2025-12-07T15:30:00.000Z",
+      "status": "confirmado"
+    }
+  ],
+  "usuarios": []
+}

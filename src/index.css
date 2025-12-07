@@ -1,0 +1,210 @@
+/* ============================================
+   CINEMAX - TEMA DARK PREMIUM (Vermelho/Preto)
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #e50914;
+  border-radius: 4px;
+}
+
+/* Cards com efeito glass */
+.card-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.card-glass:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(229, 9, 20, 0.2);
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+/* Botões personalizados */
+.btn-cinemax {
+  background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-cinemax:hover {
+  background: linear-gradient(135deg, #ff1a1a 0%, #e50914 100%);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.4);
+  color: white;
+}
+
+.btn-outline-cinemax {
+  background: transparent;
+  border: 2px solid #e50914;
+  color: #e50914;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-outline-cinemax:hover {
+  background: #e50914;
+  color: white;
+}
+
+/* Navbar */
+.navbar-cinemax {
+  background: rgba(15, 15, 35, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(229, 9, 20, 0.3);
+}
+
+/* Hero Section */
+.hero-cinemax {
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.1) 0%, rgba(15, 15, 35, 0.9) 100%);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-cinemax::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(229, 9, 20, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+/* Texto gradiente */
+.text-gradient {
+  background: linear-gradient(135deg, #e50914 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Inputs estilizados */
+.form-control-dark {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 8px;
+}
+.form-control-dark:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #e50914;
+  color: white;
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+}
+.form-control-dark::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Badge personalizado */
+.badge-cinemax {
+  background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Grid de filmes */
+.filme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+/* Card de filme */
+.filme-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.filme-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border-color: #e50914;
+}
+.filme-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Modal dark */
+.modal-dark .modal-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%);
+  border: 1px solid rgba(229, 9, 20, 0.2);
+  color: white;
+}
+.modal-dark .modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.modal-dark .modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.modal-dark .btn-close {
+  filter: invert(1);
+}
+
+/* Tabela dark */
+.table-dark-custom {
+  background: transparent;
+  color: white;
+}
+.table-dark-custom th {
+  background: rgba(229, 9, 20, 0.2);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.table-dark-custom td {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.05);
+}
